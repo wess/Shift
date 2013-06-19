@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Shift' target in the 'Shift' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -14,7 +14,7 @@ NSString *string = @"Hello world";
 // Set a state for it.
 string.shiftState = @"inactive";
 
-// Setup some call backs when that state changes.
+// Setup some callbacks when that state changes.
 
 [string on:@"active" do:^(id self) {
   NSLog(@"I have become active");
@@ -36,6 +36,8 @@ string.shiftState = @"inactive";
   NSLog(@"OMG, My state is transitioning from!");
 }];
 
+
+string.shiftState = @"active";
 
 ````
 
